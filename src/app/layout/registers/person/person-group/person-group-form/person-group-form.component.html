@@ -1,0 +1,17 @@
+<form role="form" [formGroup]="formGroupRules">
+  <div class="row">
+    <div class="col-sm-4">
+      <app-input-text
+            [caption]="translate.getString('name')"
+            [errorMessage]="translate.getString('name-error-message')"
+            [name]="'name'"
+            [required]="true">
+        <input type="text" class="form-control"
+            placeholder="{{translate.getString('name-message')}}"
+            formControlName="name" autocomplete="off"
+            [(ngModel)]="service.entity.name">
+      </app-input-text>
+    </div>
+
+  </div>
+</form>
