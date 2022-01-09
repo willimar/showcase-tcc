@@ -20,24 +20,17 @@ export class MenuSerice extends BaseService<MenuModel> {
     let register = menuModel.addMenuItem('nav-icon fa fa-list-alt', 'register');
 
     let people = register.addMenuItem('nav-icon fa fa-users', 'people');
-    people.addMenuItem('nav-icon fa fa-address-card', 'person-type');
-    people.addMenuItem('nav-icon fa fa-flag', 'person-group');
-    people.addMenuItem('nav-icon fas fa-user-friends', 'person');
+    people.addMenuItem('nav-icon fa fa-address-card', 'user');
+    people.addMenuItem('nav-icon fa fa-address-card', 'stakeholder');
 
-    let product = register.addMenuItem('nav-icon fa fa-microchip', 'products');
-    product.addMenuItem('nav-icon fa fa-cubes', 'product-feature');
-    product.addMenuItem('nav-icon fa fa-object-group', 'product-group');
-    product.addMenuItem('nav-icon fa fa-object-group', 'product-sub-group');
-    product.addMenuItem('nav-icon fa fa-archive', 'product');
-
-    let transactions = register.addMenuItem('nav-icon fa fa-sitemap', 'transactions');
-    transactions.addMenuItem('nav-icon fa fa-store-alt', 'purchase-order');
-    transactions.addMenuItem('nav-icon fa fa-shopping-cart', 'sale-order');
-    transactions.addMenuItem('nav-icon fa fa-truck-loading', 'product-check-in');
-    transactions.addMenuItem('nav-icon fa fa-luggage-cart', 'product-check-out');
-    transactions.addMenuItem('nav-icon fa fa-cash-register', 'cash-flow');
-
+    let process = register.addMenuItem('nav-icon fa fa-users', 'process');
+    process.addMenuItem('nav-icon fa fa-address-card', 'process-flow');
+    
     let reports = menuModel.addMenuItem('nav-icon fa fa-project-diagram', 'reports');
+
+    let processoReport = reports.addMenuItem('nav-icon fa fa-users', 'process');
+    processoReport.addMenuItem('nav-icon fa fa-address-card', 'process-analitic');
+    processoReport.addMenuItem('nav-icon fa fa-address-card', 'process-sintetic');
 
     let helps = menuModel.addMenuItem('nav-icon fas fa-question-circle', 'help');
 

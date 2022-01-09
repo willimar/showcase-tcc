@@ -31,8 +31,16 @@ export class SystemMenuPtBr extends TranslateBase{
       [this.getKeyName(`help`)]: "Ajuda",
       [this.getKeyName(`system`)]: "Sistema",
       [this.getKeyName(`about`)]: "Sobre...",
+      [this.getKeyName(`user`)]: "Usuário...",
+      [this.getKeyName(`stakeholder`)]: "Stakeholder...",
+      [this.getKeyName(`process`)]: "Processos",
+      [this.getKeyName(`process-flow`)]: "Fluxo de processos...",
+      [this.getKeyName(`process-report`)]: "Análise de processos",
+      [this.getKeyName(`process-analitic`)]: "Analítico...",
+      [this.getKeyName(`process-sintetic`)]: "Sintético...",
     };
 
     return result;
   }
 }
+
