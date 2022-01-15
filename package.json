@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
     "admin-lte": "file:packages/admin-lte",
+    "ng-select2": "^1.4.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

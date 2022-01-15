@@ -1,0 +1,14 @@
+<div class="form-group" [class.has-success]="hasSuccess()"
+                        [class.has-error]="hasError()"
+                        >
+  <label>
+      <span>
+        <i class="fas fa-check-double text-success" *ngIf="hasSuccess()"></i>
+        <i class="fas fa-exclamation-triangle text-warning" *ngIf="hasError()"></i>
+        {{caption}}
+        <span *ngIf="required"> *</span>
+      </span>
+  </label>
+  <ng-content></ng-content>
+  <label *ngIf="hasError()" class="text-info font-italic blockquote-footer text-danger">{{errorMessage}}</label>
+</div>
