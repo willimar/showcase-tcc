@@ -25,6 +25,7 @@ import { PersonGroupComponent } from './layout/registers/person/person-group/per
 import { PersonGroupViewComponent } from './layout/registers/person/person-group/person-group-view/person-group-view.component';
 import { PersonGroupFormComponent } from './layout/registers/person/person-group/person-group-form/person-group-form.component';
 import { PersonGroupFormPermissionComponent } from './layout/registers/person/person-group/person-group-form-permission/person-group-form-permission.component';
+import { InputCheckComponent } from './components/shared/controls/inputs/input-check/input-check.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { PersonGroupFormPermissionComponent } from './layout/registers/person/pe
     PersonGroupComponent,
     PersonGroupViewComponent,
     PersonGroupFormComponent,
-    PersonGroupFormPermissionComponent
+    PersonGroupFormPermissionComponent,
+    InputCheckComponent
   ],
   imports: [
     BrowserModule,
