@@ -24,10 +24,11 @@ export class PersonGroupComponent extends FormBaseComponent<PersonGroupModel> im
     this.service.entity.registerDate = new Date();
   }
 
-  constructor(public service: PersonGroupService, form: FormBuilder) {
+  constructor(form: FormBuilder, personGroupService: PersonGroupService) {
     super();
     this.formBuilder = form;
-    this.viewName = 'person-type';
+    this.viewName = 'person-group';
+    this.service = personGroupService;
 
     this.translate = new Translate([
       new GlobalMessagePtBr(),
@@ -37,10 +38,10 @@ export class PersonGroupComponent extends FormBaseComponent<PersonGroupModel> im
     ]);
 
     // Fake data
-    this.mokValuesView();
+    // this.mokValuesView();
   }
 
-  ngOnInit(): void {
+  override ngOnInit(): void {
     this.formGroupRules = this.formBuilder.group({});
 
     this.service.formGroup = [];

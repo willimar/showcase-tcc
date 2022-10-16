@@ -26,7 +26,7 @@ export class PersonTypeComponent extends FormBaseComponent<PersonTypeModel> impl
     this.service.entity.registerDate = new Date();
   }
 
-  constructor(public service: PersonTypeService, form: FormBuilder)
+  constructor(form: FormBuilder)
   {
     super();
     this.formBuilder = form;
@@ -43,7 +43,7 @@ export class PersonTypeComponent extends FormBaseComponent<PersonTypeModel> impl
     this.mokValuesView();
   }
 
-  ngOnInit(): void {
+  override ngOnInit(): void {
     this.formGroupRules = this.formBuilder.group({});
 
     this.service.formGroup = [];

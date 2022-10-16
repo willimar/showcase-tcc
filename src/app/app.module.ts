@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { NgSelect2Module } from 'ng-select2';
-import { DataTablesModule } from 'angular-datatables';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +25,7 @@ import { PersonGroupComponent } from './layout/registers/person/person-group/per
 import { PersonGroupViewComponent } from './layout/registers/person/person-group/person-group-view/person-group-view.component';
 import { PersonGroupFormComponent } from './layout/registers/person/person-group/person-group-form/person-group-form.component';
 import { PersonGroupFormPermissionComponent } from './layout/registers/person/person-group/person-group-form-permission/person-group-form-permission.component';
+import { InputCheckComponent } from './components/shared/controls/inputs/input-check/input-check.component';
 
 @NgModule({
   declarations: [
@@ -48,15 +48,15 @@ import { PersonGroupFormPermissionComponent } from './layout/registers/person/pe
     PersonGroupComponent,
     PersonGroupViewComponent,
     PersonGroupFormComponent,
-    PersonGroupFormPermissionComponent
+    PersonGroupFormPermissionComponent,
+    InputCheckComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NgSelect2Module,
     ReactiveFormsModule,
-    AppRoutingModule,
-    DataTablesModule
+    AppRoutingModule
   ],
   providers: [FormBuilder],
   bootstrap: [AppComponent]

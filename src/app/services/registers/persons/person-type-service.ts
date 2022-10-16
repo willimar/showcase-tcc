@@ -7,7 +7,7 @@ import { BaseService } from "../../shared/base-service";
   providedIn: 'root'
 })
 export class PersonTypeService extends BaseService<PersonTypeModel> {
-  constructor(public http: HttpClient){
+  constructor(){
     super();
     this.entity = new PersonTypeModel();
     this.controller = 'registers';

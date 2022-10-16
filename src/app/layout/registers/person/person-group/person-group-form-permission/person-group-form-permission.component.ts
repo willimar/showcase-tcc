@@ -11,9 +11,9 @@ export class PersonGroupFormPermissionComponent implements OnInit {
 
   ngOnInit(): void {
 
-      let api: DataTables.Api = $("#example1").DataTable({
-        "responsive": true, "lengthChange": false, "autoWidth": false,
-      });
+      // let api: DataTables.Api = $("#example1").DataTable({
+      //   "responsive": true, "lengthChange": false, "autoWidth": false,
+      // });
   }
 
 }

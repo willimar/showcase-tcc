@@ -102,7 +102,7 @@ export class PannelButtonsComponent implements OnInit {
   }
 
   getStatus(): StatusService {
-    if (this.service?.status == StatusService.saving || this.service.status == StatusService.error) {
+    if (this.service == undefined || (this.service?.status == StatusService.saving || this.service.status == StatusService.error)) {
       return StatusService.error
     } else {
       return this.status;
